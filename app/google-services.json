@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "737932796924",
+    "project_id": "mpterm-314b4"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:737932796924:android:252235466521fb25",
+        "android_client_info": {
+          "package_name": "com.example.mpterm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDY3qvAUKlLjmLV8lATGZW9DcbkO-_u9es"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

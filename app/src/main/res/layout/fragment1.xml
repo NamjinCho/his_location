@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="195dp"
+        android:layout_height="210dp"
+        android:background="#ffFADDCA"
+        android:id="@+id/layout1">
+        <ImageView
+            android:layout_width="195dp"
+            android:layout_height="210dp"
+            android:id="@+id/dragicon"
+            android:visibility="visible"
+            android:src ="@drawable/drag"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="195dp"
+        android:layout_height="210dp"
+        android:background="#ff9DC3E6"
+        android:id="@+id/layout2"
+        android:layout_below="@+id/layout1">
+    <ImageView
+        android:layout_width="195dp"
+        android:layout_height="210dp"
+        android:id="@+id/donateicon"
+        android:visibility="visible"
+        android:src ="@drawable/donate"
+        android:onClick="donate"/>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="195dp"
+        android:layout_height="210dp"
+        android:background="#ffffd966"
+        android:id="@+id/layout4"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/layout1">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="195dp"
+        android:layout_height="210dp"
+        android:background="#ff94BEE4"
+        android:id="@+id/layout3"
+        android:layout_below="@+id/layout2"
+        android:layout_alignParentStart="true" >
+        <ImageView
+            android:layout_width="195dp"
+            android:layout_height="210dp"
+            android:id="@+id/nopanogaicon"
+            android:visibility="visible"
+            android:src ="@drawable/nopanoga"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="195dp"
+        android:layout_height="match_parent"
+        android:background="#ffC5E0b4"
+        android:layout_below="@+id/layout4"
+        android:layout_alignLeft="@+id/layout4"
+        android:id="@+id/layout5"
+        android:onClick="ViewInformation">
+    <ImageView
+        android:layout_width="210dp"
+        android:layout_height="480dp"
+        android:id="@+id/informationicon"
+        android:visibility="gone"
+        android:src ="@drawable/information"/>
+        <ImageView
+            android:layout_width="210dp"
+            android:layout_height="480dp"
+            android:id="@+id/click"
+            android:visibility="visible"
+            android:src ="@drawable/click"/>
+    </RelativeLayout>
+
+</RelativeLayout>

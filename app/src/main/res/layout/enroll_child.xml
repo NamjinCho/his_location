@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:id="@+id/childEmail"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="156dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/emailEdt"
+        android:hint="Email"
+        android:layout_alignTop="@+id/childEmail"
+        android:layout_alignBottom="@+id/childEmail"
+        android:layout_toEndOf="@+id/childEmail" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="등록하기"
+        android:id="@+id/btn_enroll"
+        android:onClick="enroll"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이름 : "
+        android:id="@+id/nameView"
+        android:textSize="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/emailEdt" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/nameEdt"
+        android:hint="이름"
+        android:layout_alignTop="@+id/nameView"
+        android:layout_toEndOf="@+id/childEmail" />
+
+</RelativeLayout>
